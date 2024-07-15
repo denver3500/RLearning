@@ -9,3 +9,13 @@ set.seed(123)
 sample(letters, 5)
 rnorm(5)
 rnorm(5,5,5)
+
+
+rna <- read.csv("data/rnaseq.csv")
+rna200 <- rna[200, ]
+n_rows <- nrow(rna)
+rna_last <- rna[n_rows, ]
+tail(rna)
+tail(rna_last)
+rna_middle <- rna[n_rows/2, ]
+rna_bead
